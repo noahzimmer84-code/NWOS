@@ -1,0 +1,15 @@
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\bin\Release\net8.0\NWOS.SystemCenter.deps.json
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\bin\Release\net8.0\NWOS.SystemCenter.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\bin\Release\net8.0\NWOS.SystemCenter.pdb
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\bin\Release\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\bin\Release\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.Sys.43324DE6.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\refint\NWOS.SystemCenter.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\NWOS.SystemCenter.pdb
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter\obj\Release\net8.0\ref\NWOS.SystemCenter.dll

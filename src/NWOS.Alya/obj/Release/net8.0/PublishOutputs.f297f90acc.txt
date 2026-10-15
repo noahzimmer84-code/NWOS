@@ -1,0 +1,7 @@
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Alya.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Alya.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Alya.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Release\net8.0\publish\NWOS.Settings.pdb

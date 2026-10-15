@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.DesktopShell</RootNamespace>
+    <!-- Bewusst net8.0 statt net8.0-windows: diese Schicht enthält nur Modelle,
+         Speicherung, Such-Index und Geschäftsregeln - keine WPF/WinUI-Referenzen.
+         Die visuelle Darstellung kommt als separates net8.0-windows-Projekt
+         (NWOS.DesktopShell.Ui, TODO), das gegen diese Klassen bindet. So bleibt
+         die Kernlogik plattformneutral testbar (Abschnitt 39). -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+    <ProjectReference Include="..\NWOS.Settings\NWOS.Settings.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.Marc</RootNamespace>
+    <!--
+      Bewusst KEINE Netzwerk-bezogenen Pakete/Referenzen in diesem Projekt -
+      Marc darf laut Abschnitt 9 keinen allgemeinen Netzwerkzugriff haben.
+      Das ist zusätzlich zur harten Regel in NWOS.Cardinal.PermissionManager
+      eine zweite, unabhängige Absicherung auf Code-Ebene: selbst wenn die
+      Berechtigungsprüfung eines Tages einen Fehler hätte, besitzt dieses
+      Projekt schlicht keinen HttpClient o.ä., um etwas damit anzufangen.
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

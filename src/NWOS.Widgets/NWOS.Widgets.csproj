@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.Widgets</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+    <ProjectReference Include="..\NWOS.Settings\NWOS.Settings.csproj" />
+  </ItemGroup>
+
+</Project>

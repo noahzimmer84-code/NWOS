@@ -1,0 +1,15 @@
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\NWOS.ConfigSetup.deps.json
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\NWOS.ConfigSetup.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\NWOS.ConfigSetup.pdb
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.Con.6BAFD1A6.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\refint\NWOS.ConfigSetup.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\NWOS.ConfigSetup.pdb
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\obj\Release\net8.0\ref\NWOS.ConfigSetup.dll

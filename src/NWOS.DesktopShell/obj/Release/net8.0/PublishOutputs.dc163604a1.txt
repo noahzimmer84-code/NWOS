@@ -1,0 +1,7 @@
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.DesktopShell.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.DesktopShell.deps.json
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.DesktopShell.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Release\net8.0\publish\NWOS.Settings.pdb

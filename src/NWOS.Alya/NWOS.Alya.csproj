@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.Alya</RootNamespace>
+    <!--
+      Bewusst KEINE Referenz auf NWOS.Alice oder NWOS.Marc: Alya darf laut
+      Architekturdokument Abschnitt 5/31 nicht direkt auf andere Module
+      zugreifen, nur über Cardinal vermittelt (NWOS.Contracts.IModuleMessenger).
+      Diese Projektstruktur macht eine direkte Umgehung technisch unmöglich,
+      nicht nur "verboten aber möglich".
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+    <ProjectReference Include="..\NWOS.Settings\NWOS.Settings.csproj" />
+  </ItemGroup>
+
+</Project>

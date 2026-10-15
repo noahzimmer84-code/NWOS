@@ -1,0 +1,17 @@
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Widgets.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Widgets.dll
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Widgets.pdb
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Widgets\bin\Release\net8.0\NWOS.Settings.pdb
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Wid.CF297DC6.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.dll
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\refint\NWOS.Widgets.dll
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\NWOS.Widgets.pdb
+C:\NWOS instalation\nwos\src\NWOS.Widgets\obj\Release\net8.0\ref\NWOS.Widgets.dll

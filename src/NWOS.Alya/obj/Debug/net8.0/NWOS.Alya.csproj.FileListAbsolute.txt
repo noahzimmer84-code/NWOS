@@ -1,0 +1,17 @@
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Alya.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Alya.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Alya.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\bin\Debug\net8.0\NWOS.Settings.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.csproj.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\refint\NWOS.Alya.dll
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\NWOS.Alya.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alya\obj\Debug\net8.0\ref\NWOS.Alya.dll

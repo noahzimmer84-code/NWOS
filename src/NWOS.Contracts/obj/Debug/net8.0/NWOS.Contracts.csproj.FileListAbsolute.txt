@@ -1,0 +1,11 @@
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Debug\net8.0\NWOS.Contracts.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Debug\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Debug\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\refint\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Contracts\obj\Debug\net8.0\ref\NWOS.Contracts.dll

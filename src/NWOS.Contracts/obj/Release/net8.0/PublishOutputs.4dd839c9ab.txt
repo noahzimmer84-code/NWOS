@@ -1,0 +1,3 @@
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Release\net8.0\publish\NWOS.Contracts.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Contracts\bin\Release\net8.0\publish\NWOS.Contracts.pdb

@@ -1,0 +1,61 @@
+<Window x:Class="NWOS.DesktopShell.Ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NWOS System Shell" Height="48" WindowStyle="None" ResizeMode="NoResize"
+        Background="#1E1E1E" Topmost="True" AllowsTransparency="True">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/> <!-- Zone 1: Widgets & Alya/Marc -->
+            <ColumnDefinition Width="Auto"/> <!-- Zone 2: Navigation & Alice-Suche -->
+            <ColumnDefinition Width="*"/>   <!-- Zone 3: App- & Game-Hub (flexibel) -->
+            <ColumnDefinition Width="Auto"/> <!-- Zone 4: Audio & Hintergrund-Monitor -->
+            <ColumnDefinition Width="Auto"/> <!-- Zone 5: Benachrichtigungs-Feed -->
+        </Grid.ColumnDefinitions>
+
+        <!-- ZONE 1: Widgets & Alya/Marc (Linke Seite) -->
+        <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="8,0">
+            <Button Content="🤖 Alya" Command="{Binding Zone1ViewModel.ToggleWidgetPopupCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+            <ItemsControl x:Name="WidgetsItemsControl" ItemsSource="{Binding Zone1ViewModel.Widgets}" Visibility="Collapsed"/>
+            <ComboBox x:Name="WidgetTypeComboBox" Width="0" Height="0" Visibility="Collapsed"/>
+            <TextBlock Text="{Binding Zone1ViewModel.AssistantMessage}" VerticalAlignment="Center" Foreground="White" Margin="8,0" MaxWidth="200" TextTrimming="CharacterEllipsis"/>
+        </StackPanel>
+
+        <!-- ZONE 2: Navigation, Master-Button & Alice-Suche -->
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="12,0">
+            <Button Content="❖ Master" Command="{Binding Zone2ViewModel.ToggleMasterMenuCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+            <Button Content="🖥️ WS1" Command="{Binding Zone2ViewModel.SwitchWorkspaceCommand}" CommandParameter="1" Style="{StaticResource TaskbarButtonStyle}"/>
+            <TextBox x:Name="SearchBox" Text="{Binding Zone2ViewModel.SearchQuery, UpdateSourceTrigger=PropertyChanged}" Width="120" VerticalAlignment="Center" Margin="6,0"/>
+            <Button Content="🔍 Alice" Command="{Binding Zone2ViewModel.ExecuteGlobalSearchCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+            <ListBox x:Name="SearchResultsList" Width="0" Height="0" Visibility="Collapsed"/>
+        </StackPanel>
+
+        <!-- ZONE 3: App- & Game-Hub (Zentrum) -->
+        <Grid Grid.Column="2">
+            <ItemsControl x:Name="IconsItemsControl" ItemsSource="{Binding Zone3ViewModel.PinnedApps}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding Name}" Command="{Binding DataContext.Zone3ViewModel.LaunchAppCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}" CommandParameter="{Binding}" Style="{StaticResource TaskbarButtonStyle}" Margin="4,0"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <ItemsControl x:Name="BoxesItemsControl" Visibility="Collapsed"/>
+        </Grid>
+
+        <!-- ZONE 4: Audio & System Monitor -->
+        <StackPanel Grid.Column="3" Orientation="Horizontal" Margin="12,0">
+            <Button Content="🔊 Audio" Command="{Binding Zone4ViewModel.ToggleAudioPopupCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+            <Button Content="📊 Monitor" Command="{Binding Zone4ViewModel.ToggleBackgroundMonitorCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+        </StackPanel>
+
+        <!-- ZONE 5: Benachrichtigungs-Feed (Rechte Seite) -->
+        <StackPanel Grid.Column="4" Orientation="Horizontal" Margin="8,0">
+            <Button Content="🔔 Info" Command="{Binding Zone5ViewModel.ToggleNotificationFeedCommand}" Style="{StaticResource TaskbarButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Window>

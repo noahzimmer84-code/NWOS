@@ -1,0 +1,5 @@
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\publish\NWOS.WindowsIntegration.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\publish\NWOS.WindowsIntegration.deps.json
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\publish\NWOS.WindowsIntegration.pdb
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\publish\NWOS.Contracts.pdb

@@ -1,0 +1,111 @@
+using System;
+using System.IO;
+using System.IO.Pipes;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace NWOS.Cardinal
+{
+    public sealed class CardinalIpcServer
+    {
+        private const string PipeName = "NWOS.Cardinal.Pipe";
+        private CancellationTokenSource? _cts;
+        private Task? _serverTask;
+        private readonly CardinalIpcDispatcher _dispatcher;
+
+        public CardinalIpcServer(CardinalIpcDispatcher dispatcher)
+        {
+            _dispatcher = dispatcher ?? throw new ArgumentNullException(nameof(dispatcher));
+        }
+
+        public void Start()
+        {
+            _cts = new CancellationTokenSource();
+            _serverTask = Task.Run(() => ListenLoopAsync(_cts.Token));
+        }
+
+        private async Task ListenLoopAsync(CancellationToken cancellationToken)
+        {
+            while (!cancellationToken.IsCancellationRequested)
+            {
+                NamedPipeServerStream? pipeStream = null;
+                try
+                {
+                    pipeStream = new NamedPipeServerStream(
+                        PipeName,
+                        PipeDirection.InOut,
+                        NamedPipeServerStream.MaxAllowedServerInstances,
+                        PipeTransmissionMode.Message,
+                        PipeOptions.Asynchronous);
+
+                    // Auf Verbindung von der Desktop-Shell warten
+                    await pipeStream.WaitForConnectionAsync(cancellationToken);
+
+                    // Jede Verbindung wird komplett unabhängig in einem Hintergrund-Task verarbeitet,
+                    // damit ein Fehler in einer Verbindung niemals den Server stoppt.
+                    _ = Task.Run(() => HandleClientAsync(pipeStream, cancellationToken), cancellationToken);
+                }
+                catch (OperationCanceledException)
+                {
+                    // Normal beim Herunterfahren
+                    pipeStream?.Dispose();
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    // Selbst wenn der Pipe-Stream fehlschlägt, läuft die Schleife weiter!
+                    Console.WriteLine($"[Cardinal Error] Pipe-Server Fehler: {ex.Message}");
+                    pipeStream?.Dispose();
+                    await Task.Delay(500, cancellationToken); // Kurze Pause bei Systemlast
+                }
+            }
+        }
+
+        private async Task HandleClientAsync(NamedPipeServerStream pipeStream, CancellationToken cancellationToken)
+        {
+            using (pipeStream)
+            {
+                try
+                {
+                    using var reader = new StreamReader(pipeStream);
+                    using var writer = new StreamWriter(pipeStream) { AutoFlush = true };
+
+                    string? requestJson = await reader.ReadLineAsync(cancellationToken);
+                    if (string.IsNullOrWhiteSpace(requestJson))
+                    {
+                        await writer.WriteLineAsync("{\"status\":\"error\",\"message\":\"Leere Anfrage\"}");
+                        return;
+                    }
+
+                    // Anfrage an den Dispatcher übergeben
+                    string responseJson = await _dispatcher.DispatchAndExecuteAsync(requestJson);
+
+                    await writer.WriteLineAsync(responseJson);
+                }
+                catch (Exception ex)
+                {
+                    // Fängt Client-Abstürze oder Verbindungsabbrüche ab
+                    try
+                    {
+                        using var writer = new StreamWriter(pipeStream) { AutoFlush = true };
+                        await writer.WriteLineAsync($"{{\"status\":\"error\",\"message\":\"Server-Interner Fehler: {ex.Message.Replace("\"", "\\\"")}\"}}");
+                    }
+                    catch
+                    {
+                        // Wenn selbst das Schreiben fehlschlägt, ignorieren wir es, da der Client weg ist
+                    }
+                }
+            }
+        }
+
+        public void Stop()
+        {
+            _cts?.Cancel();
+            try
+            {
+                _serverTask?.Wait(2000);
+            }
+            catch { }
+        }
+    }
+}

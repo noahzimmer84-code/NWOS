@@ -1,0 +1,11 @@
+C:\NWOS instalation\nwos\src\NWOS.Settings\bin\Debug\net8.0\NWOS.Settings.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Settings\bin\Debug\net8.0\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Settings\bin\Debug\net8.0\NWOS.Settings.pdb
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\refint\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\NWOS.Settings.pdb
+C:\NWOS instalation\nwos\src\NWOS.Settings\obj\Debug\net8.0\ref\NWOS.Settings.dll

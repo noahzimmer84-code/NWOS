@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.SystemCenter.Windows</RootNamespace>
+    <!--
+      net8.0-windows, weil System.Management (WMI) und der Autostart-Registry-
+      Zugriff Windows-spezifisch sind - gleiches Muster wie
+      NWOS.WindowsIntegration. NWOS.SystemCenter selbst bleibt dadurch
+      plattformneutral testbar.
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.SystemCenter\NWOS.SystemCenter.csproj" />
+  </ItemGroup>
+
+</Project>

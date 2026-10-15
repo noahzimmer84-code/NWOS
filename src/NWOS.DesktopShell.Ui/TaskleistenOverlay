@@ -1,0 +1,81 @@
+#windows
+#include <windows.h>
+#include <shellapi.h>
+
+#pragma comment(lib, "shell32.lib")
+
+// Globale Variablen für das Overlay
+const wchar_t* CLASS_NAME = L"NWOS_Overlay_Taskbar";
+HWND g_hwndTaskbar = NULL;
+const int TASKBAR_HEIGHT = 48; // Höhe deiner 5-Zonen Taskleiste
+
+// AppBar Registrierung, damit Fenster nicht über die Taskleiste maximieren
+void RegisterAppBar(HWND hwnd) {
+    APPBARDATA abd = { 0 };
+    abd.cbSize = sizeof(APPBARDATA);
+    abd.hWnd = hwnd;
+    abd.uCallbackMessage = WM_USER + 1;
+
+    // Leiste am unteren Bildschirmrand anmelden
+    SHAppBarMessage(ABM_NEW, &abd);
+
+    abd.rc.left = 0;
+    abd.rc.right = GetSystemMetrics(SM_CXSCREEN);
+    abd.rc.bottom = GetSystemMetrics(SM_CYSCREEN);
+    abd.rc.top = abd.rc.bottom - TASKBAR_HEIGHT;
+    abd.uEdge = ABE_BOTTOM;
+
+    SHAppBarMessage(ABM_SETPOS, &abd);
+}
+
+// Window Procedure für das Overlay
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+    switch (uMsg) {
+    case WM_CREATE:
+        RegisterAppBar(hwnd);
+        return 0;
+
+    case WM_DESTROY: {
+        APPBARDATA abd = { 0 };
+        abd.cbSize = sizeof(APPBARDATA);
+        abd.hWnd = hwnd;
+        SHAppBarMessage(ABM_REMOVE, &abd);
+        PostQuitMessage(0);
+        return 0;
+    }
+    }
+    return DefWindowProc(hwnd, uMsg, wParam, lParam);
+}
+
+// Einstiegspunkt der Desktop-Shell
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow) {
+    WNDCLASSW wc = { 0 };
+    wc.lpfnWndProc = WindowProc;
+    wc.hInstance = hInstance;
+    wc.lpszClassName = CLASS_NAME;
+    wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+
+    RegisterClassW(&wc);
+
+    // Erstellen des Overlay-Fensters (Popup ohne klassische Windows-Rahmen, immer im Vordergrund)
+    g_hwndTaskbar = CreateWindowExW(
+        WS_EX_TOPMOST | WS_EX_TOOLWINDOW, // Immer im Vordergrund, taucht nicht in Alt-Tab auf
+        CLASS_NAME,
+        L"NWOS System Shell",
+        WS_POPUP | WS_VISIBLE,            // Reines Popup ohne Titelleiste oder Rahmen
+        0, GetSystemMetrics(SM_CYSCREEN) - TASKBAR_HEIGHT,
+        GetSystemMetrics(SM_CXSCREEN), TASKBAR_HEIGHT,
+        NULL, NULL, hInstance, NULL
+    );
+
+    if (!g_hwndTaskbar) return 0;
+
+    // Nachrichten-Schleife
+    MSG msg = { 0 };
+    while (GetMessage(&msg, NULL, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+
+    return 0;
+}

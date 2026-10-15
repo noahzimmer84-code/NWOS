@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.Bootstrap.Windows</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <PublishTrimmed>true</PublishTrimmed>
+    <!--
+      Das ist der einzige Einstiegspunkt, der tatsächlich alle Windows-
+      spezifischen Fähigkeiten von NWOS zusammenführt: WMI-Systemstatus,
+      Registry-Autostart-Verwaltung und (nur auf explizite Anforderung,
+      niemals automatisch - Abschnitt 41) die Shell-Registrierung.
+      NWOS.Host bleibt bewusst plattformneutral und wird hier nur als
+      Komposition wiederverwendet (siehe NWOS.Host.HostComposition).
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Host\NWOS.Host.csproj" />
+    <ProjectReference Include="..\NWOS.SystemCenter.Windows\NWOS.SystemCenter.Windows.csproj" />
+    <ProjectReference Include="..\NWOS.WindowsIntegration\NWOS.WindowsIntegration.csproj" />
+  </ItemGroup>
+
+</Project>

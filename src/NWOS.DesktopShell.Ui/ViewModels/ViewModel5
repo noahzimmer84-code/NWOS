@@ -1,0 +1,49 @@
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using NWOS.DesktopShell;
+
+namespace NWOS.DesktopShell.Ui
+{
+    public class TaskbarZone5ViewModel : INotifyPropertyChanged
+    {
+        private readonly CardinalIpcClient _ipcClient;
+        private bool _isNotificationFeedOpen;
+
+        public ObservableCollection<NotificationItem> Notifications { get; } = new();
+
+        public bool IsNotificationFeedOpen
+        {
+            get => _isNotificationFeedOpen;
+            set { _isNotificationFeedOpen = value; OnPropertyChanged(nameof(IsNotificationFeedOpen)); }
+        }
+
+        public TaskbarZone5ViewModel(CardinalIpcClient ipcClient)
+        {
+            _ipcClient = ipcClient;
+            LoadInitialNotifications();
+        }
+
+        private void LoadInitialNotifications()
+        {
+            Notifications.Add(new NotificationItem("Alya", "System erfolgreich gebootet.", "08:45"));
+            Notifications.Add(new NotificationItem("Marc", "Widgets bereitgestellt.", "08:45"));
+        }
+
+        public void ToggleNotificationFeed()
+        {
+            IsNotificationFeedOpen = !IsNotificationFeedOpen;
+        }
+
+        public void ClearNotifications()
+        {
+            Notifications.Clear();
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public record NotificationItem(string Source, string Message, string Timestamp);
+}

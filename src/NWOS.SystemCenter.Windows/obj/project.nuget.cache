@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "2qQ61Zt2hs8=",
+  "success": true,
+  "projectFilePath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\noahj\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\noahj\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\noahj\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\noahj\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\noahj\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.31\\microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}

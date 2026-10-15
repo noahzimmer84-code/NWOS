@@ -1,0 +1,10 @@
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.SystemCenter.Windows.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.SystemCenter.Windows.deps.json
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.SystemCenter.Windows.pdb
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\System.CodeDom.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\System.Management.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\runtimes\win\lib\net8.0\System.Management.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.SystemCenter.dll
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.SystemCenter.pdb
+C:\NWOS instalation\nwos\src\NWOS.SystemCenter.Windows\bin\Release\net8.0-windows\publish\NWOS.Contracts.pdb

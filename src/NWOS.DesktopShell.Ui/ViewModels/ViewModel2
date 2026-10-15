@@ -1,0 +1,76 @@
+using System.ComponentModel;
+using System.Threading.Tasks;
+using NWOS.DesktopShell;
+
+namespace NWOS.DesktopShell.Ui
+{
+    public class TaskbarZone2ViewModel : INotifyPropertyChanged
+    {
+        private readonly CardinalIpcClient _ipcClient;
+        private string _searchQuery = string.Empty;
+        private string _searchResult = string.Empty;
+        private int _activeWorkspace = 1;
+        private bool _isMasterMenuOpen;
+
+        public string SearchQuery
+        {
+            get => _searchQuery;
+            set { _searchQuery = value; OnPropertyChanged(nameof(SearchQuery)); }
+        }
+
+        public string SearchResult
+        {
+            get => _searchResult;
+            set { _searchResult = value; OnPropertyChanged(nameof(SearchResult)); }
+        }
+
+        public int ActiveWorkspace
+        {
+            get => _activeWorkspace;
+            set { _activeWorkspace = value; OnPropertyChanged(nameof(ActiveWorkspace)); }
+        }
+
+        public bool IsMasterMenuOpen
+        {
+            get => _isMasterMenuOpen;
+            set { _isMasterMenuOpen = value; OnPropertyChanged(nameof(IsMasterMenuOpen)); }
+        }
+
+        public TaskbarZone2ViewModel(CardinalIpcClient ipcClient)
+        {
+            _ipcClient = ipcClient;
+        }
+
+        /// <summary>
+        /// Führt eine globale Suche über Alice aus (ausgelöst durch den Such-Button in Bereich 2).
+        /// </summary>
+        public async Task ExecuteGlobalSearchAsync()
+        {
+            if (string.IsNullOrWhiteSpace(SearchQuery)) return;
+
+            // Anfrage via IPC an Alice (über den Desktopshell-Service)
+            SearchResult = await _ipcClient.SendRequestAsync("nwos.desktopshell", "search.global", SearchQuery);
+        }
+
+        /// <summary>
+        /// Öffnet oder schließt das zentrale NWOS Master-Menü.
+        /// </summary>
+        public void ToggleMasterMenu()
+        {
+            IsMasterMenuOpen = !IsMasterMenuOpen;
+        }
+
+        /// <summary>
+        /// Schaltet den virtuellen Desktop / Workspace um.
+        /// </summary>
+        public void SwitchWorkspace(int workspaceId)
+        {
+            ActiveWorkspace = workspaceId;
+            // Hier greift die Logik der Fensterverwaltung in der Shell
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}

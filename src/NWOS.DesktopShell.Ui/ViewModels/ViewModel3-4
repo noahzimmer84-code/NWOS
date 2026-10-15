@@ -1,0 +1,86 @@
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using NWOS.DesktopShell;
+
+namespace NWOS.DesktopShell.Ui
+{
+    public class TaskbarZone3And4ViewModel : INotifyPropertyChanged
+    {
+        private readonly CardinalIpcClient _ipcClient;
+        private int _masterVolume = 50;
+        private bool _isAudioPopupOpen;
+        private bool _isBackgroundMonitorOpen;
+
+        public ObservableCollection<AppItem> PinnedApps { get; } = new();
+        public ObservableCollection<BackgroundProcessItem> BackgroundProcesses { get; } = new();
+
+        public int MasterVolume
+        {
+            get => _masterVolume;
+            set
+            {
+                _masterVolume = value;
+                OnPropertyChanged(nameof(MasterVolume));
+                _ = UpdateVolumeSystemAsync(value);
+            }
+        }
+
+        public bool IsAudioPopupOpen
+        {
+            get => _isAudioPopupOpen;
+            set { _isAudioPopupOpen = value; OnPropertyChanged(nameof(IsAudioPopupOpen)); }
+        }
+
+        public bool IsBackgroundMonitorOpen
+        {
+            get => _isBackgroundMonitorOpen;
+            set { _isBackgroundMonitorOpen = value; OnPropertyChanged(nameof(IsBackgroundMonitorOpen)); }
+        }
+
+        public TaskbarZone3And4ViewModel(CardinalIpcClient ipcClient)
+        {
+            _ipcClient = ipcClient;
+            LoadDefaultPinnedApps();
+        }
+
+        private void LoadDefaultPinnedApps()
+        {
+            // Beispiel-Apps im Hub (Bereich 3)
+            PinnedApps.Add(new AppItem("NWOS Explorer", "nwos.apps.explorer"));
+            PinnedApps.Add(new AppItem("Terminal", "nwos.apps.terminal"));
+            PinnedApps.Add(new AppItem("Game Hub", "nwos.games.hub"));
+        }
+
+        public void ToggleAudioPopup()
+        {
+            IsAudioPopupOpen = !IsAudioPopupOpen;
+            if (IsAudioPopupOpen) IsBackgroundMonitorOpen = false; // Schließt das andere Pop-up
+        }
+
+        public void ToggleBackgroundMonitor()
+        {
+            IsBackgroundMonitorOpen = !IsBackgroundMonitorOpen;
+            if (IsBackgroundMonitorOpen) IsAudioPopupOpen = false;
+        }
+
+        public async Task LaunchAppAsync(AppItem app)
+        {
+            // Startet die App über den IPC-Client im Kernel
+            await _ipcClient.SendRequestAsync("nwos.desktopshell", "app.launch", app.ActionId);
+        }
+
+        private async Task UpdateVolumeSystemAsync(int volume)
+        {
+            // Lautstärke-Befehl an das Audiosystem senden
+            await _ipcClient.SendRequestAsync("nwos.desktopshell", "system.setVolume", volume.ToString());
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public record AppItem(string Name, string ActionId);
+    public record BackgroundProcessItem(string ProcessName, string Status);
+}

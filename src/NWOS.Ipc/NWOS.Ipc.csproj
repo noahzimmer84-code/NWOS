@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.Ipc</RootNamespace>
+    <!--
+      Bewusst net8.0, nicht net8.0-windows: System.IO.Pipes.NamedPipeServerStream/
+      NamedPipeClientStream funktionieren seit .NET Core plattformübergreifend
+      (unter Windows als echte Named Pipes, unter Linux/macOS über Unix-Domain-
+      Sockets). Das macht diesen Transport - anders als WindowsIntegration oder
+      SystemCenter.Windows - tatsächlich plattformneutral testbar.
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <ProjectReference Include="..\NWOS.Cardinal\NWOS.Cardinal.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1329 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Bootstrap.Windows\\NWOS.Bootstrap.Windows.csproj": {}
+  },
+  "projects": {
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj",
+        "projectName": "NWOS.Alice",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj",
+        "projectName": "NWOS.Alya",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Bootstrap.Windows\\NWOS.Bootstrap.Windows.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Bootstrap.Windows\\NWOS.Bootstrap.Windows.csproj",
+        "projectName": "NWOS.Bootstrap.Windows",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Bootstrap.Windows\\NWOS.Bootstrap.Windows.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Bootstrap.Windows\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\NWOS.Host.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\NWOS.Host.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\NWOS.WindowsIntegration.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\NWOS.WindowsIntegration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.DotNet.ILCompiler": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.31, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.31, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj",
+        "projectName": "NWOS.Cardinal",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.DotNet.ILCompiler": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.31, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.31, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\NWOS.ConfigSetup.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\NWOS.ConfigSetup.csproj",
+        "projectName": "NWOS.ConfigSetup",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\NWOS.ConfigSetup.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj",
+        "projectName": "NWOS.Contracts",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\NWOS.DesktopShell.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\NWOS.DesktopShell.csproj",
+        "projectName": "NWOS.DesktopShell",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\NWOS.DesktopShell.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\NWOS.Host.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\NWOS.Host.csproj",
+        "projectName": "NWOS.Host",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\NWOS.Host.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Host\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alice\\NWOS.Alice.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Alya\\NWOS.Alya.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\NWOS.ConfigSetup.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.ConfigSetup\\NWOS.ConfigSetup.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\NWOS.DesktopShell.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.DesktopShell\\NWOS.DesktopShell.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\NWOS.Ipc.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\NWOS.Ipc.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\NWOS.Widgets.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\NWOS.Widgets.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\NWOS.Ipc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\NWOS.Ipc.csproj",
+        "projectName": "NWOS.Ipc",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\NWOS.Ipc.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Ipc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Cardinal\\NWOS.Cardinal.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj",
+        "projectName": "NWOS.Marc",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\NWOS.Marc.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Marc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj",
+        "projectName": "NWOS.Settings",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj",
+        "projectName": "NWOS.SystemCenter.Windows",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\NWOS.SystemCenter.Windows.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter.Windows\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj",
+        "projectName": "NWOS.SystemCenter",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\NWOS.SystemCenter.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.SystemCenter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\NWOS.Widgets.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\NWOS.Widgets.csproj",
+        "projectName": "NWOS.Widgets",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\NWOS.Widgets.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Widgets\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              },
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Settings\\NWOS.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\NWOS.WindowsIntegration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\NWOS.WindowsIntegration.csproj",
+        "projectName": "NWOS.WindowsIntegration",
+        "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\NWOS.WindowsIntegration.csproj",
+        "packagesPath": "C:\\Users\\noahj\\.nuget\\packages\\",
+        "outputPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.WindowsIntegration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\noahj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj": {
+                "projectPath": "C:\\NWOS instalation\\nwos\\src\\NWOS.Contracts\\NWOS.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

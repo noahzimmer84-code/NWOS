@@ -1,0 +1,17 @@
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.DesktopShell.deps.json
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.DesktopShell.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.DesktopShell.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.Settings.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\bin\Debug\net8.0\NWOS.Settings.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.Des.707988D1.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\refint\NWOS.DesktopShell.dll
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\NWOS.DesktopShell.pdb
+C:\NWOS instalation\nwos\src\NWOS.DesktopShell\obj\Debug\net8.0\ref\NWOS.DesktopShell.dll

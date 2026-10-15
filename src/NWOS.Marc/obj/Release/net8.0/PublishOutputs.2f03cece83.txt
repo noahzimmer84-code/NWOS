@@ -1,0 +1,5 @@
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Release\net8.0\publish\NWOS.Marc.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Release\net8.0\publish\NWOS.Marc.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Release\net8.0\publish\NWOS.Marc.pdb
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Release\net8.0\publish\NWOS.Contracts.pdb

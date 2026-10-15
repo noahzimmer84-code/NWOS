@@ -1,0 +1,5 @@
+C:\NWOS instalation\nwos\src\NWOS.Alice\bin\Release\net8.0\publish\NWOS.Alice.dll
+C:\NWOS instalation\nwos\src\NWOS.Alice\bin\Release\net8.0\publish\NWOS.Alice.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Alice\bin\Release\net8.0\publish\NWOS.Alice.pdb
+C:\NWOS instalation\nwos\src\NWOS.Alice\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Alice\bin\Release\net8.0\publish\NWOS.Contracts.pdb

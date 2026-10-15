@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.DesktopShell.Ui</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <!--
+      Die UI spricht mit Cardinal ausschließlich über NWOS.Ipc (Named Pipe).
+      Sie referenziert bewusst NICHT mehr NWOS.DesktopShell / NWOS.Widgets:
+      Icons, Boxen, Widgets und Suche liegen im laufenden Cardinal-Prozess
+      (NWOS.Bootstrap.Windows), die UI ist nur noch Darstellung (Abschnitt 7).
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+    <ProjectReference Include="..\NWOS.Ipc\NWOS.Ipc.csproj" />
+    <ProjectReference Include="..\NWOS.DesktopShell\NWOS.DesktopShell.csproj" />
+  </ItemGroup>
+
+</Project>

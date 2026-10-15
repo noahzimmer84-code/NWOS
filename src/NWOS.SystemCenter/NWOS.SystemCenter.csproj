@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.SystemCenter</RootNamespace>
+    <!--
+      Bewusst net8.0 (plattformneutral): enthält nur die Schnittstellen
+      (ISystemStatusProvider, IAutostartManager) und alles, was ohne
+      Windows-spezifische APIs auskommt (TempCleaner, ProtectedProcessList,
+      ProcessLister via System.Diagnostics.Process). Die echten
+      WMI-/Registry-Implementierungen liegen in NWOS.SystemCenter.Windows -
+      gleiches Muster wie NWOS.WindowsIntegration.
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+namespace NWOS.Cardinal.Ipc
+{
+    public class CardinalIpcDispatcher
+    {
+        private readonly AlyaEngine _alyaEngine;
+        private readonly MarcWidgetManager _widgetManager;
+
+        public CardinalIpcDispatcher(AlyaEngine alyaEngine, MarcWidgetManager widgetManager)
+        {
+            _alyaEngine = alyaEngine;
+            _widgetManager = widgetManager;
+        }
+
+        public async Task<string> DispatchAsync(string service, string action, string payload)
+        {
+            // Unterscheidung nach Service-Namespace aus der Taskleiste
+            switch (service.ToLowerInvariant())
+            {
+                case "nwos.alya":
+                    return await HandleAlyaActionAsync(action, payload);
+
+                case "nwos.widgets":
+                    return await HandleWidgetActionAsync(action, payload);
+
+                default:
+                    return "{\"status\":\"error\",\"message\":\"Unbekannter Service\"}";
+            }
+        }
+
+        private async Task<string> HandleAlyaActionAsync(string action, string payload)
+        {
+            return action switch
+            {
+                "alya.listTasks" => await _alyaEngine.GetActiveTasksJsonAsync(),
+                "alya.runTask" => await _alyaEngine.ExecuteTaskAsync(payload),
+                "alya.getStatus" => "{\"status\":\"online\",\"module\":\"Alya\"}",
+                _ => "{\"status\":\"error\",\"message\":\"Unbekannte Alya-Aktion\"}"
+            };
+        }
+
+        private async Task<string> HandleWidgetActionAsync(string action, string payload)
+        {
+            return action switch
+            {
+                "widget.list" => await _widgetManager.GetWidgetsJsonAsync(),
+                "widget.render" => await _widgetManager.RenderWidgetInstanceAsync(payload),
+                _ => "{\"status\":\"error\",\"message\":\"Unbekannte Widget-Aktion\"}"
+            };
+        }
+    }
+}

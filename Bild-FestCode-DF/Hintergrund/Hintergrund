@@ -1,0 +1,52 @@
+namespace NWOS.Bootstrap.Windows
+{
+    public class SystemBootstrapper
+    {
+        public async Task InitializeSystemAsync()
+    {
+        bool isSystemBooting = true;
+
+        if (isSystemBooting)
+        {
+            // 1. Visuellen Start-Hintergrund aus dem Bild-FestCode / Bilder-Bereich triggern
+            TriggerStartupBackground();
+
+            // 2. Alya & Kern-Dienste im Hintergrund starten (Bereinigen, Reparieren, Aktualisieren)
+            await RunAlyaMaintenanceProtocolAsync();
+        }
+
+        // 3. Warten auf Login
+        bool loginAccessGranted = await WaitForUserLoginAsync();
+
+        if (loginAccessGranted)
+        {
+            // 4. Startup-Protokoll für den aktiven Desktop ausführen
+            GiveStartupProtocol();
+        }
+    }
+
+        private void TriggerStartupBackground()
+        {
+            // Hier wird das native Hintergrund-Tool oder der Aufruf aus Bild-FestCode-DF angestoßen
+            System.Diagnostics.Process.Start(@"C:\NWOS instalation\nwos\Bild-FestCode-DF\Hintergrund\Hintergrund.exe");
+        }
+
+        private async Task RunAlyaMaintenanceProtocolAsync()
+    {
+        // Alyas Aufgaben während des Ladebildschirms abarbeiten lassen
+        await Task.Delay(2000);
+    }
+
+        private async Task<bool> WaitForUserLoginAsync()
+    {
+        // Logik für den Login-Screen, der über der Animation auftaucht
+        return await Task.FromResult(true);
+    }
+
+        private void GiveStartupProtocol()
+        {
+            // Das Startup-Protokoll nach erfolgreichem Login (z.B. Alice & Marc aktivieren)
+            System.Console.WriteLine("Startup-Protokoll erfolgreich ausgeführt. Willkommen in NWOS!");
+        }
+    }
+}

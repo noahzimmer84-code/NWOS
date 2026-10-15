@@ -1,0 +1,15 @@
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\bin\Release\net8.0\NWOS.Cardinal.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\bin\Release\net8.0\NWOS.Cardinal.dll
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\bin\Release\net8.0\NWOS.Cardinal.pdb
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\bin\Release\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\bin\Release\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Car.36B7D666.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.dll
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\refint\NWOS.Cardinal.dll
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\NWOS.Cardinal.pdb
+C:\NWOS instalation\nwos\src\NWOS.Cardinal\obj\Release\net8.0\ref\NWOS.Cardinal.dll

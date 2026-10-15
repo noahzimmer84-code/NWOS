@@ -1,0 +1,15 @@
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\NWOS.WindowsIntegration.deps.json
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\NWOS.WindowsIntegration.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\NWOS.WindowsIntegration.pdb
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\bin\Release\net8.0-windows\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.Win.F14C7A46.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\refint\NWOS.WindowsIntegration.dll
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\NWOS.WindowsIntegration.pdb
+C:\NWOS instalation\nwos\src\NWOS.WindowsIntegration\obj\Release\net8.0-windows\ref\NWOS.WindowsIntegration.dll

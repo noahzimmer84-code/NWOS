@@ -1,0 +1,5 @@
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\publish\NWOS.ConfigSetup.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\publish\NWOS.ConfigSetup.deps.json
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\publish\NWOS.ConfigSetup.pdb
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\publish\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.ConfigSetup\bin\Release\net8.0\publish\NWOS.Contracts.pdb

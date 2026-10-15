@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NWOS.WindowsIntegration</RootNamespace>
+    <!-- net8.0-windows, weil diese Projektmappe die einzige ist, die echte
+         Win32/Shell-APIs anfassen wird. Alle anderen Projekte bleiben auf
+         net8.0 (plattformneutral), damit Cardinal-Kern und Tests theoretisch
+         auch außerhalb von Windows gebaut/getestet werden können. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NWOS.Contracts\NWOS.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

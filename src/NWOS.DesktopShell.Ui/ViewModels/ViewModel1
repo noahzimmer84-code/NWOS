@@ -1,0 +1,82 @@
+using System.ComponentModel;
+using System.Threading.Tasks;
+using NWOS.DesktopShell;
+
+namespace NWOS.DesktopShell.Ui
+{
+    public class TaskbarZone1ViewModel : INotifyPropertyChanged
+    {
+        private readonly CardinalIpcClient _ipcClient;
+        private bool _isWidgetPopupOpen;
+        private string _inputText = string.Empty;
+        private string _assistantMessage = "Willkommen in NWOS! Soll das Update-Log geladen werden?";
+
+        public bool IsWidgetPopupOpen
+        {
+            get => _isWidgetPopupOpen;
+            set { _isWidgetPopupOpen = value; OnPropertyChanged(nameof(IsWidgetPopupOpen)); }
+        }
+
+        public string InputText
+        {
+            get => _inputText;
+            set { _inputText = value; OnPropertyChanged(nameof(InputText)); }
+        }
+
+        public string AssistantMessage
+        {
+            get => _assistantMessage;
+            set { _assistantMessage = value; OnPropertyChanged(nameof(AssistantMessage)); }
+        }
+
+        public TaskbarZone1ViewModel(CardinalIpcClient ipcClient)
+        {
+            _ipcClient = ipcClient;
+
+            // Optional: Automatisches Laden beim Start triggern
+            _ = LoadWelcomeLogAsync();
+        }
+
+        /// <summary>
+        /// Verarbeitet die Texteingabe des Nutzers im universellen Marc/Alya-Feld.
+        /// </summary>
+        public async Task SubmitCommandAsync()
+        {
+            if (string.IsNullOrWhiteSpace(InputText)) return;
+
+            string query = InputText;
+            InputText = string.Empty;
+
+            // Anfrage an den Kernel (Alya/Marc) übergeben
+            string result = await _ipcClient.SendRequestAsync("nwos.alya", "assistant.query", query);
+            AssistantMessage = result;
+        }
+
+        /// <summary>
+        /// Lädt das System-Update-Log über den Kernel und zeigt es in der Sprechblase an.
+        /// </summary>
+        public async Task LoadWelcomeLogAsync()
+        {
+            // IPC-Anfrage an den Kernel für das Update-Log
+            string logResult = await _ipcClient.SendRequestAsync("nwos.alya", "system.updatelog", "get");
+
+            if (!string.IsNullOrEmpty(logResult))
+            {
+                AssistantMessage = $"NWOS v3.0 Update-Log:\n{logResult}";
+            }
+            else
+            {
+                AssistantMessage = "NWOS v3.0 erfolgreich gestartet! Alle Systeme stabil.";
+            }
+        }
+
+        public void ToggleWidgetPopup()
+        {
+            IsWidgetPopupOpen = !IsWidgetPopupOpen;
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}

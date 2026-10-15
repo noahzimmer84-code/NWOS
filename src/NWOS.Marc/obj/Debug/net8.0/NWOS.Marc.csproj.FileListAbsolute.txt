@@ -1,0 +1,15 @@
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Debug\net8.0\NWOS.Marc.deps.json
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Debug\net8.0\NWOS.Marc.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Debug\net8.0\NWOS.Marc.pdb
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Debug\net8.0\NWOS.Contracts.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\bin\Debug\net8.0\NWOS.Contracts.pdb
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.csproj.AssemblyReference.cache
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.GeneratedMSBuildEditorConfig.editorconfig
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.AssemblyInfoInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.AssemblyInfo.cs
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.csproj.CoreCompileInputs.cache
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.csproj.Up2Date
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\refint\NWOS.Marc.dll
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\NWOS.Marc.pdb
+C:\NWOS instalation\nwos\src\NWOS.Marc\obj\Debug\net8.0\ref\NWOS.Marc.dll
