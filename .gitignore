@@ -1,0 +1,14 @@
+# Java / Maven Build-Artefakte
+java/**/target/
+
+# .NET Build-Artefakte
+src/**/bin/
+src/**/obj/
+tests/**/bin/
+tests/**/obj/
+
+*.user
+.idea/
+.vs/
+bin/
+obj/
