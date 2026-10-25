@@ -21,6 +21,9 @@ sollte zuerst in einer VM getestet werden (`NWOS.Bootstrap.Windows.exe register-
 Setup-EXE. Der gesamte Code (inkl. Installer) wurde in einer Umgebung ohne .NET/Windows geschrieben und noch nie
 kompiliert oder ausgeführt. Erste Build-Fehler sind daher möglich; `-RunTests` zeigt sie früh.
 
+bekannter Fehler:
+PowerShell Skrip ausführung Blockieret
+1. Geben sie im selben PowerShell Fenster diesen Befehl ein: powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\NWOS\NWOS-main\Install-NWOS.ps1" -Quiet
 ---
 
 # NWOS – Phase 1 + Phase 2 (Grundgerüst)
